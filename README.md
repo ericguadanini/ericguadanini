@@ -12,24 +12,23 @@ I come from intelligence and strategy (M.A. in International Relations) and data
 
 Organizations rarely fail for lack of data. They fail at the seams: between teams, between a dataset and what it actually means, between information and the decision it was supposed to inform. I treat four disciplines as parts of a single function.
 
-Collection, processing and analysis form the core cycle. Organization is not one more step in it: it is the meta-layer that governs every stage and gives it meaning, from start to finish.
+Collection, processing and analysis form the core cycle. Organization is not one more step in it: it is the meta-layer that governs the whole cycle, from the requirement to the decision, and keeps each decision as knowledge the organization can return to.
 
 ```mermaid
 flowchart LR
-    R(["Requirement<br/>what the decision needs"]) --> C
     subgraph ORG["Organization layer · governance & knowledge management, end to end"]
-        C["Collection"] --> P["Processing"] --> A["Analysis"]
+        direction LR
+        R(["Requirement<br/>what the decision needs"]) --> C["Collection"] --> P["Processing"] --> A["Analysis"] --> D(["Decision"])
+        D -. "recorded as knowledge,<br/>feeds new requirements" .-> R
     end
-    A --> D(["Decision"])
-    D -. feedback .-> R
     style ORG stroke-dasharray: 6 4
 ```
 
 | Discipline | Question it answers | Role in the cycle |
 |---|---|---|
 | **Intelligence** | What does the decision-maker need to know, and what are we missing? | Sets the requirement and drives the analysis |
-| **Data Governance** | Can this data be trusted, and who answers for it? | Organization layer: trust and accountability at every stage |
-| **Knowledge Management** | What does it mean, and how does tacit knowledge get written down? | Organization layer: meaning and shared context at every stage |
+| **Data Governance** | Can this data be trusted, and who answers for it? | Organization layer: trust and accountability, from requirement to decision |
+| **Knowledge Management** | What does it mean, how does tacit knowledge get written down, and what did we decide before? | Organization layer: meaning, shared context and the memory of past decisions |
 | **AI** | Who, or what, consumes it and acts on it? | Processing and analysis, at scale |
 
 ---
