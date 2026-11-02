@@ -19,7 +19,7 @@ flowchart LR
     subgraph ORG["Organization layer · governance & knowledge management, end to end"]
         direction LR
         R(["Requirement<br/>what the decision needs"]) --> C["Collection"] --> P["Processing"] --> A["Analysis"] --> D(["Decision"])
-        D -. "recorded as knowledge,<br/>feeds new requirements" .-> R
+        D -. "feedback<br/>decision recorded as knowledge" .-> R
     end
     style ORG stroke-dasharray: 6 4
 ```
