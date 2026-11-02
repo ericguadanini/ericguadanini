@@ -2,7 +2,7 @@
 
 > **Data Governance Lead · Organizational Intelligence · Data, AI & Knowledge Management**
 
-Data without strategic context is just noise. My work covers the whole path information takes inside an organization: how it is collected, organized, governed, given meaning, analyzed and, finally, turned into a decision.
+Data without strategic context is just noise. My work covers the whole path information takes inside an organization, from collection through processing and analysis to the decision, and the organizing layer that governs that path from start to finish.
 
 I come from intelligence and strategy (M.A. in International Relations) and data science (FIAP). Today I lead data governance end to end: I design the governance and build the infrastructure that runs it.
 
@@ -12,22 +12,25 @@ I come from intelligence and strategy (M.A. in International Relations) and data
 
 Organizations rarely fail for lack of data. They fail at the seams: between teams, between a dataset and what it actually means, between information and the decision it was supposed to inform. I treat four disciplines as parts of a single function.
 
+Collection, processing and analysis form the core cycle. Organization is not one more step in it: it is the meta-layer that governs every stage and gives it meaning, from start to finish.
+
 ```mermaid
 flowchart LR
-    R["Requirement<br/>what the decision needs"] --> C["Collection"]
-    C --> G["Organization<br/>& Governance"]
-    G --> K["Interpretation<br/>meaning & context"]
-    K --> A["Analysis"]
-    A --> D["Decision"]
+    R(["Requirement<br/>what the decision needs"]) --> C
+    subgraph ORG["Organization layer · governance & knowledge management, end to end"]
+        C["Collection"] --> P["Processing"] --> A["Analysis"]
+    end
+    A --> D(["Decision"])
     D -. feedback .-> R
+    style ORG stroke-dasharray: 6 4
 ```
 
-| Discipline | Question it answers | Where it sits in the chain |
+| Discipline | Question it answers | Role in the cycle |
 |---|---|---|
-| **Intelligence** | What does the decision-maker need to know, and what are we missing? | Requirements and analysis |
-| **Data Governance** | Can this data be trusted, and who answers for it? | Collection, organization and quality |
-| **Knowledge Management** | What does it mean, and how does tacit knowledge get written down? | Interpretation and shared context |
-| **AI** | Who, or what, consumes it and acts on it? | Analysis and use, at scale |
+| **Intelligence** | What does the decision-maker need to know, and what are we missing? | Sets the requirement and drives the analysis |
+| **Data Governance** | Can this data be trusted, and who answers for it? | Organization layer: trust and accountability at every stage |
+| **Knowledge Management** | What does it mean, and how does tacit knowledge get written down? | Organization layer: meaning and shared context at every stage |
+| **AI** | Who, or what, consumes it and acts on it? | Processing and analysis, at scale |
 
 ---
 
