@@ -4,7 +4,7 @@
 
 Data without strategic context is just noise. My work covers the whole path information takes inside an organization, from collection through processing and analysis to the decision, and the organizing layer that governs that path from start to finish.
 
-I come from intelligence and strategy (M.A. in International Relations) and data science (FIAP). Today I lead data governance end to end: I design the governance and build the infrastructure that runs it.
+I come from intelligence and strategy (M.A. in International Relations) and data science (FIAP), and I'm currently pursuing a postgraduate degree in Tech Management, also at FIAP. Today I lead data governance end to end: I design the governance and build the infrastructure that runs it.
 
 ---
 
