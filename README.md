@@ -18,8 +18,10 @@ Collection, processing and analysis form the core cycle. Organization is not one
 flowchart LR
     subgraph ORG["Organization layer · governance & knowledge management, end to end"]
         direction LR
-        R(["Requirement<br/>what the decision needs"]) --> C["Collection"] --> P["Processing"] --> A["Analysis"] --> D(["Decision"])
-        D -. "feedback<br/>decision recorded as knowledge" .-> R
+        R(["Requirement<br/>what the decision needs"])
+        D(["Decision"])
+        D -. "feedback:#nbsp;decision#nbsp;recorded#nbsp;as#nbsp;knowledge" .-> R
+        R --> C["Collection"] --> P["Processing"] --> A["Analysis"] --> D
     end
     style ORG stroke-dasharray: 6 4
 ```
